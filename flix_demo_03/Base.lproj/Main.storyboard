@@ -22,9 +22,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="FXY-Jk-Rgt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="199" id="QwO-7T-nnK" customClass="MovieCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="199"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="199"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QwO-7T-nnK" id="eji-tK-7px">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="198.5"/>
@@ -72,6 +77,7 @@
                     <navigationItem key="navigationItem" title="Movies" id="IcX-Wu-FXF"/>
                     <connections>
                         <outlet property="activityIndicator" destination="84E-Dd-fdA" id="wgG-dA-8Dt"/>
+                        <outlet property="searchBar" destination="FXY-Jk-Rgt" id="g8u-CA-kS1"/>
                         <outlet property="tableView" destination="loq-70-7qC" id="3bz-Sw-P7A"/>
                     </connections>
                 </viewController>
@@ -126,12 +132,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zey-Ws-Wof">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Zey-Ws-Wof">
                                     <size key="itemSize" width="119" height="197"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
+                                <searchBar key="backgroundView" contentMode="redraw" id="hkk-2s-9jU">
+                                    <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionCell" id="csU-Cz-wHW" customClass="MovieCollectionCell">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="197"/>
@@ -142,12 +153,13 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJK-MH-TOF">
                                                     <rect key="frame" x="0.0" y="0.0" width="119" height="197"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="posterView" destination="PJK-MH-TOF" id="YIK-OI-Wtg"/>
+                                            <segue destination="eC7-p2-cg9" kind="show" id="gZ7-ki-zJo"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -238,4 +250,7 @@
             <point key="canvasLocation" x="77.599999999999994" y="692.20389805097454"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m00-AG-zWQ"/>
+    </inferredMetricsTieBreakers>
 </document>
