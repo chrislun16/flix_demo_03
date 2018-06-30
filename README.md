@@ -2,7 +2,7 @@
 
 **Flixster** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **16.48333** hours spent in total
 
 ## User Stories
 
@@ -16,10 +16,10 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 
 - [X] User sees an error message when there's a networking error.
-- [] Movies are displayed using a CollectionView instead of a TableView.
+- [X] Movies are displayed using a CollectionView instead of a TableView.
 - [X] User can search for a movie.
 - [ ] All images fade in as they are loading.
-- [ ] User can view the large movie poster by tapping on a cell.
+- [X] User can view the large movie poster by tapping on a cell.
 - [X] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
 - [ ] Customize the selection effect of the cell.
 - [ ] Customize the navigation bar.
@@ -30,7 +30,6 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app functionality!
 - User can tap on poster image to access youtube trailer
   - return button available after accessing youtube trailer
-- Superhero movies are displayed using a CollectionView instead of a TableView.
 - Only Images in the Now Playing Table View (with all the movies) fade in as they are loading
 - User can view a cropped large movie poster by tapping on a cell, as well as a synopsis of the movie and the title as well
   as a poster image
