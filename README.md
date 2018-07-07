@@ -46,9 +46,9 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/7Z1W0Is.gif' title='flix' width='200' alt='Video Walkthrough' />
-<img src='https://i.imgur.com/ZpYe7Nn.gif' title='flix' width='200' alt='Video Walkthrough' />
-<img src='https://i.imgur.com/iicvFh5.gif' title='flix' width='200' alt='Video Walkthrough' />
+<img src='[Imgur](https://i.imgur.com/4AfKAAL.gif)' title='flix' width='200' alt='Video Walkthrough' />
+<img src='[Imgur](https://i.imgur.com/Gh5hRxV.gif)' title='flix' width='200' alt='Video Walkthrough' />
+<img src='[Imgur](https://i.imgur.com/osraS0Y.gif)' title='flix' width='200' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
